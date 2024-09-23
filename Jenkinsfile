@@ -1,13 +1,18 @@
 pipeline {
 	agent any
-		stages{
-			stage("compile")
+		stages{ 
+			stage('compile')
+			{steps
+			 {
+				 bat'mvn compile'}
+			 }
+			stage("clean package")
 			{steps{
 				
 			
-				bat'mvn compile'}
+				bat'mvn package'}
 		}
 		}
 
-}
+         }
 
