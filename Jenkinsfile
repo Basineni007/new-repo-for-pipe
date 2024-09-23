@@ -6,3 +6,4 @@ pipeline {
 				bat'mvn compile'}}
 
 }
+
